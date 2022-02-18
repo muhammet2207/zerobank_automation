@@ -1,0 +1,120 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7990753400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user logged in",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccountSummaryDef.the_user_logged_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2495052200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to Pay Bills tab",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDef.user_goes_to_Pay_Bills_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154969200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user accesses the Purchase foreign currency cash tab",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDef.the_user_accesses_the_Purchase_foreign_currency_cash_tab()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-15T20:32:14.000Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9352428900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Error message for not selecting currency",
+        "description": "",
+        "id": "purchase-foreign-currency;error-message-for-not-selecting-currency",
+        "after": [
+          {
+            "result": {
+              "duration": 936886200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 333773600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user tries to calculate cost without selecting a currency",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDef.user_tries_to_calculate_cost_without_selecting_a_currency()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32841100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "error message should be displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBillsDef.error_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase Foreign Currency",
+    "description": "",
+    "id": "purchase-foreign-currency",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PurchaseForeignCurrency.feature",
+    "tags": []
+  }
+]
